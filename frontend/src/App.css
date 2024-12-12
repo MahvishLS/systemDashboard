@@ -1,0 +1,45 @@
+
+body {
+  background: linear-gradient(135deg, #add7ec, #fdfbfb , #add7ec);
+}
+
+h1{
+  font-size: 3.5rem;
+  color: #244386;
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 3rem;
+}
+
+.row-cards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  width: 100%;
+  
+}
+.header-item {
+  font-size: 1.5rem;
+  color: rgb(68, 66, 66);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
