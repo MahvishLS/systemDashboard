@@ -1,4 +1,4 @@
-version: '3.8'
+version: "3.8"
 
 services:
   backend:
@@ -17,9 +17,9 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
-    container_name: react-frontend
+    container_name: dashboard-frontend
     ports:
       - "3000:3000"
     volumes:
       - ./frontend:/app
-    command: ["yarn", "start"]
+    command: ["npm", "start"]

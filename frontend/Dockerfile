@@ -1,21 +1,13 @@
-# Use the official Node.js image
-FROM node:14
+FROM node:20-alpine
 
-# Set the working directory
 WORKDIR /app
 
-# Copy the package.json and install dependencies
-COPY package.json yarn.lock ./
-RUN yarn install
+COPY package.json package-lock.json ./
 
-# Copy the rest of the application files
+RUN npm install
+
 COPY . .
 
-# Build the application
-RUN yarn build
-
-# Expose the port the app runs on
 EXPOSE 3000
 
-# Command to run the application
-CMD ["yarn", "start"]
+CMD npm start
