@@ -4,7 +4,6 @@ import psutil
 import platform
 import requests
 from datetime import datetime
-import wmi
 
 app = FastAPI()
 
